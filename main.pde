@@ -12,7 +12,7 @@ import java.net.URL;
 import java.lang.Object;
 import java.net.MalformedURLException;
 
-String apiKey = "AIzaSyAdoipd0Lb8OVK87ZlhLEsn62c_tnq23VQ";
+String apiKey = "apiKey";
 ImageLoader loader;
 ImageList list;
 Image img;
