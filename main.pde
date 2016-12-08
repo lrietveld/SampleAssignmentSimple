@@ -29,13 +29,13 @@ void setup(){
   //background();
   size(800, 600);
   surface.setResizable(true);
-  theWords = tal.intoArrayList(ss.splitItUp(new File("desktop/data/toadTest.txt")));
+  theWords = tal.intoArrayList(ss.splitItUp(new File("toadTest.txt")));
  /* try {
      theWords = tal.intoArrayList(ss.splitItUp(new URL("http://www.gutenberg.org/cache/epub/2225/pg2225.txt")));
     } catch (MalformedURLException  malformedURLException) {
      malformedURLException.printStackTrace();
     } */
-  p.makeCommonArray(new File("desktop/data/commonWords.txt"));
+  p.makeCommonArray(new File("commonWords.txt"));
   p.putArray(theWords);
   list = loader.start(p.mostFrequentWord(1)/*+" png"*/, true, 60 * 100);
 }
